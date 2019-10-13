@@ -1,0 +1,157 @@
+<html>
+
+<head>
+
+	<title>Pixel Art Maker</title>
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+  
+  <script src="jscolor.js"></script>
+  <!--<script src="html2canvas.js"></script> -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+  <form method="POST" enctype="multipart/form-data" action="/save" id="myForm">
+    <input type="hidden" name="img_val" id="img_val" value="" />
+  </form>
+
+
+  <script id="capture">
+    window.take = function() {
+      html2canvas(document.getElementById("nameandart"), {
+        onrendered: function (canvas) {
+            var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+            window.location.href = image
+          }
+      })
+    }
+  </script>
+
+
+  <div id="navbar">
+    <a href='index.html'>New Pixel Art</a>
+    <a href='scrapbookPage.html'>Scrapbook</a>
+  </div>
+
+  <h1>Pixel Art Maker</h1>
+
+</head>
+
+<td align="center">
+<form id="myForm"> 
+</td> 
+
+<body background="idea4.gif">
+<div id = "nameandart">
+
+
+
+  <div id="art">
+
+    <div id="entername">
+      Name: <input type="text">
+    </div>
+
+
+    <div class="row">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+    </div>
+    <div class="row">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}" >
+    </div>
+    <div class="row">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+    </div>
+    <div class="row">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+    </div>
+    <div class="row">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+    </div>
+    <div class="row">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+    </div>
+    <div class="row">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+    </div>
+    <div class="row">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}">
+    </div>
+  </div>
+  <form id="form1" method="POST" action="scrapbookPage.html">
+    <button class="save" onclick="take()">Save</button>
+  </form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

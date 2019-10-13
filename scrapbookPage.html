@@ -1,0 +1,80 @@
+<html>
+
+<head>
+
+	<title>Pixel Art Maker</title>
+	<link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+  
+  <script src="jscolor.js"></script>
+  <script>
+    function refreshPage(){
+        window.location.reload();
+    } 
+  </script>
+
+  <script>
+    var i = 0; 
+    var j=0;
+    var image_path = "C:/Users/McNaldo/Downloads/download";
+
+    function images()
+    {
+      imagesArray = new Array();
+      imagesArray[j]=image_path + ' (' + i + ')';
+      if (imagesArray[j] == “null”)
+      {
+        break;
+      }
+      else {
+      <a href="imagesArray[j]"> "Image" + i </a>
+              i++;
+        j++;
+        images();
+      }
+      }
+    </script>
+
+  
+
+
+</head>
+
+<td align="center">
+</td> 
+
+<body background="idea4.gif" onload="images()">
+<div class="allpage">
+  <div id="navbar">
+    <a href='index.html'>Pixel Art Maker</a>
+    <a href='scrapbookPage.html'>ScrapbookFinished</a>
+  </div>
+  <div class="gallery">
+    <div class="row1">
+      <div class="column1">
+        <script type="text/javascript">
+        for (i = 1; i < 201; i++) {
+          document.write('<a href="C:/Users/McNaldo/Downloads/download ('+i+')" onclick="return !window.open(this.href);"><img src="C:/Users/McNaldo/Downloads/download ('+i+')" height="54" width="72" alt="'+i+'" title="'+i+'" />');
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

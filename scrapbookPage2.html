@@ -1,0 +1,76 @@
+<html>
+
+<head>
+
+	<title>Pixel Art Maker</title>
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+  
+  <script src="jscolor.js"></script>
+  <script>
+    function refreshPage(){
+        window.location.reload();
+    } 
+  </script>
+
+  <div id="navbar">
+    <a href="#home">Home</a>
+    <a href='index.html'>Pixel Art Maker</a>
+    <a href='scrapbookPage.html'>ScrapbookFinished</a>
+  </div>
+
+  <script language="JavaScript">
+    var i = 0;  //increment number
+    var j=0;
+    var image_path = "C:/Users/dell/Desktop/";
+
+    function images()
+    {
+      imagesArray = new Array()
+      imagesArray[j]=image_path + i + '.png';
+      if (imagesArray[j] == “null”)
+      {
+        break;
+      }
+
+    else
+      {
+      <IMG SRC="imagesArray[j]">
+              i++;
+        j++;
+        images();
+      }
+      }
+  </script>
+
+</head>
+
+<td align="center">
+</td> 
+
+<body background="background.jpg" onload="images()">
+
+<ul>
+  <script type="text/javascript">
+    for (i = 1; i <= 317; i++) {
+      document.write('<li><a href="C:/Users/dell/Desktop/'+i+'.png" onclick="return !window.open(this.href);"><img src="C:/Users/dell/Desktop/'+i+'.png" height="54" width="72" alt="'+i+'" title="'+i+'" /></li>');
+    }
+  </script>
+</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
